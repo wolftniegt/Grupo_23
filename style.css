@@ -8,13 +8,17 @@ header {
     -moz-border-radius: 22px 22px 22px 22px;
     -webkit-border-radius: 22px 22px 22px 22px;
     border: 0px hidden #000000;
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(16,82,94,1);
+-moz-box-shadow: 0px 0px 11px 1px rgba(16,82,94,1);
+box-shadow: 0px 0px 11px 1px rgba(16,82,94,1);
 }
 
 img {
     width: 950px;
     height: 550px;
     object-fit: contain;
-    }
+    
+}
 
 ul {
     background-color: rgb(109, 109, 109);
