@@ -1,0 +1,28 @@
+header {
+    background-color: #2f8fa7;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 950px;
+    height: 550px;
+    object-fit: contain;
+    }
+
+ul {
+    background-color: rgb(109, 109, 109);
+    padding-block: 50PX;
+}
+
+.DATOS * {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+    .DatosD {
+        text-decoration: none;
+        color: #ffffff;
+    }
