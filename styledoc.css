@@ -1,0 +1,38 @@
+
+#fondo{
+    background-image:url(imagenes/pexels-rdne-stock-project-6129507.jpg);
+    background-size: 100% 100%;
+    height:695px;
+}
+
+.negro{
+   background-color: rgba(0, 0, 0, 0.473);
+   height: 100%;
+}
+
+#bgn{
+    
+    background-color: rgba(255, 250, 250, 0.26);
+}
+#cont {
+      width: 89%;
+     
+}
+
+.colore{
+
+    color: rgb(255, 255, 255);
+}
+em{
+    font-family: 'Anton', sans-serif;
+    color:rgb(174, 232, 255);
+}
+
+
+.cuadrar{
+
+    padding-top: 8%;
+    height: 400px;
+}
+
+
