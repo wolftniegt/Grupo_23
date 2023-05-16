@@ -6,9 +6,9 @@
 
 body {
   background-color: lightblue;
-  width: 80%; /* Ajusta el ancho de la caja según tus necesidades */
-  margin: 0 auto; /* Establece margen automático en la parte superior e inferior y margen automático a los lados para centrar la caja */
-  padding: 20px; /* Añade un espacio interno dentro de la caja */
+  width: 80%;
+  margin: 0 auto; 
+  padding: 20px;
 }
 
 header {
@@ -117,7 +117,7 @@ footer {
   font-size: 20px;
   border: 0px solid #000000;
   border-bottom: 1px solid black;
-  width: 14.28%; /* Divide la tabla en 7 columnas iguales (100% / 7) */
+  width: 14.28%;
   background-color: #42c0fa;
   font-family: Arial, Helvetica, sans-serif;
 }
