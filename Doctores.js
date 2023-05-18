@@ -11,7 +11,13 @@ InfoDoc.addEventListener('submit', (event) => {
     }
    
     guardardoctores(DatosDoc)
-
+    const confiermar = confirm("desea ingresar mas doctores o ver los datos ?")
+    if(confiermar=== true){
+        window.location.href="mostarDoc.html"
+    }
+    else{
+        FormuDoc.reset()
+    }
 })
 
 function guardardoctores(DatosDoc) {
@@ -26,7 +32,7 @@ function guardardoctores(DatosDoc) {
 }
 
 function obtenercookies(nombre) {
-    const cookies = document.cookie.split(": ")
+    const cookies = document.cookie.split("; ")
     for (let i = 0; i< cookies.length; i++) {
         const cookie = cookies[i].split("=");
         if (cookie[0] === nombre) {
