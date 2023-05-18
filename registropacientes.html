@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <section class="vh-100" id="fondo">
+  <section class="vh-100" id="fondoPa">
     <div class="negro">
       <div class="container py-8 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -22,12 +22,12 @@
             <div class="card" style="border-radius: 1rem;" id="bgn">
               <div class="row g-0">
                 <div class="col-md-6 col-lg-5 d-none d-md-block">
-                  <img src="imagenes/pexels-karolina-grabowska-4047186.jpg" alt="registroDOC" class="img-fluid"
+                  <img src="imagenes/pexels-karolina-grabowska-4386467.jpg" alt="registroDOC" class="img-fluid"
                     style="border-radius: 1rem 0 0 1rem;" />
                 </div>
                 <div class="col-md-6 col-lg-7 d-flex align-items-center">
                   <div class="card-body p-4 p-lg-5 text-black">
-                    <form class="row g-3" method="post" action="/registro" id="FormuDoc">
+                    <form class="row g-3" method="post" action="/registro" id="FormuPas">
 
                       <div class="d-flex align-items-center mb-3 pb-1">
                         <span class="h1 fw-bold mb-0">MEDIC-<em>WEB</em></span>
@@ -47,16 +47,16 @@
                           required="">
                       </div>
                       <div class="col-6 ">
-                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo"
-                          required="">
+                        <input type="text" class="form-control" id="edad" name="edad" placeholder="edad"
+                          required="" >
                       </div>
                       <div class="col-6 ">
-                        <input type="text" class="form-control" id="consultorio" name="consultorio" placeholder=" Numero Consultorio"
+                        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="telefono"
                           required="">
                       </div>
                       <div class="col-md-12">
                         <select class="form-select" id="especialidad" name="especialidad">
-                          <option disabled selected>Especialidad</option>
+                          <option disabled selected>Especialidad Requerida</option>
                           <option value="Medicina general">Medicina general </option>
                           <option value="Cardiología">Cardiología</option>
                           <option value="Medicina interna ">Medicina interna.</option>
@@ -85,4 +85,4 @@
 
     </div>
   </section>
-  <script src="Doctores.js"></script>
+  <script src="pacientes.js"></script>

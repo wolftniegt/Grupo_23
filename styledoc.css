@@ -4,6 +4,11 @@
     background-size: 100% 100%;
     height:695px;
 }
+#fondoPa{
+    background-image:url(imagenes/pexels-cottonbro-studio-3957992.jpg);
+    background-size: 100% 100%;
+    height:695px;
+}
 
 .negro{
    background-color: rgba(0, 0, 0, 0.473);
