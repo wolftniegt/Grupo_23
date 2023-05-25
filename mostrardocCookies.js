@@ -4,7 +4,7 @@ const medicosCookie = JSON.parse(obtenercookies('doctores'));
 const tablaMedicos = document.getElementById("table-container-Medicoss");
 const cuerpoTabla = tablaMedicos.querySelector("tbody");
 
-medicosCookie.forEach(medico => {
+pacienteCookie.forEach(medico => {
     const fila = cuerpoTabla.insertRow();
 
     const CedulaDoc = fila.insertCell();

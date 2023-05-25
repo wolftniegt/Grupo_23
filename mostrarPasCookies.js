@@ -1,52 +1,44 @@
 //cargar los datos de la cookie
-const medicosCookie = JSON.parse(obtenercookies('pacientes'));
-/* const mascotasCookie = JSON.parse(getCookie('mascotas') || "[]"); */
+const pacienteCookie = JSON.parse(obtenercookies('pacientes'));
+const doctoresCookies = JSON.parse(obtenercookies('doctores') || "[]");
 const tablaMedicos = document.getElementById("table-container-pacientes");
 const cuerpoTabla = tablaMedicos.querySelector("tbody");
 
-medicosCookie.forEach(medico => {
+pacienteCookie.forEach(pasiente => {
     const fila = cuerpoTabla.insertRow();
 
     const NombrePas = fila.insertCell();
-    NombrePas.textContent = medico.NombrePas;
+    NombrePas.textContent = pasiente.NombrePas;
 
     const ApellidoPas = fila.insertCell();
-    ApellidoPas.textContent = medico.ApellidoPas;
+    ApellidoPas.textContent = pasiente.ApellidoPas;
 
     const CedulaPas = fila.insertCell();
-    CedulaPas.textContent = medico.CedulaPas;
+    CedulaPas.textContent = pasiente.CedulaPas;
 
     const EdadPas = fila.insertCell();
-    EdadPas.textContent = medico.EdadPas;
-   
+    EdadPas.textContent = pasiente.EdadPas;
+    
 
     const TelefonoPas = fila.insertCell();
-    TelefonoPas.textContent = medico.TelefonoPas;
-   
+    TelefonoPas.textContent = pasiente.TelefonoPas;
+    
     
     const EspecialidadPas = fila.insertCell();
-    EspecialidadPas.textContent = medico.EspecialidadPas;
+    EspecialidadPas.textContent = pasiente.EspecialidadPas;
 
 
 
 
-    //colocar las mascotas que atiende el medico
-    //mediante filter encontramos todas las mascotas que tienen esa especialidad
-/*     let mascotasEncontradas = mascotasCookie.filter(mascota => medico.especialidad === mascota.especialidad);
-    if (mascotasEncontradas.length > 0) {
-        const medicoMascota = fila.insertCell();
-        medicoMascota.innerHTML = `<ul id="pacientes"></ul>`
-        const pacientes = medicoMascota.querySelector("#pacientes")
-        mascotasEncontradas.forEach(mascota => {
-            pacientes.innerHTML += `<li>${mascota.nombreMascota}</li>`;
-        });
-    } else {
-        const medicoMascota = fila.insertCell();
-        medicoMascota.textContent = "Sin pacientes";
-    } */
+   //colocar el medico que va a tratar la mascota
+    //mediante find encontramos el medico que tenga la especialidad
+    //devuelde el medico que tenga esa especialidad
+    const medicoEspecialidad = doctoresCookies.find(doctor => doctor.EspecialidadPas === pasiente.especialidadDoc);
+    //crear la celda
+    const celdaMedicoMascota = fila.insertCell();
+    //si hay medicos colocar el nombre del medico, de lo contrario colocar por asignar
+    celdaMedicoMascota.textContent = medicoEspecialidad ? medicoEspecialidad.NombreDoc : "Por asignar";
 });
-
-
 
 // Función para obtener los datos de la cookie
 function obtenercookies(nombre) {
